@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logobhaikaa.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web devloper</p>
+                <h1>hi, I'm <span>Aditya</span></br> Tiwari from India</h1>
+            </div>
+        </div>
+    </div>
+  <!-- ------------------------------- about--------------------- -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/bhaikiphoto.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub-tittle">About me</h2>
+                <p>I'm a passionate coder with strong skills in Java, HTML, CSS, and JavaScript. I enjoy tackling complex problems and creating efficient, clean code that brings ideas to life on the web. With a solid foundation in front-end technologies and experience in Java, I am always eager to learn more, push the boundaries of my knowledge, and contribute to innovative projects.</p>
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links"  onclick="opentab('experience')">experience</p> 
+                     <p class="tab-links"  onclick="opentab('education')">Education</p> 
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span><br>Data Structure</li>
+                        <li><span>Web Development</span><br>Web App Develoment</li>
+                        <li><span>App Development</span><br>Building Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Personal Projects</span><br>Developed several projects, including a social media app, music app, and online shopping app, focusing on functionality and user experience.</li>
+                        <li><span>Academic Projects</span><br>Worked on team projects in college, such as building a responsive portfolio website and implementing data structures in Java for problem-solving.</li>
+                        <li><span>Freelance Practice</span><br>Created mock projects to strengthen skills in web development and Java programming.</li>
+                    </ul>
+                </div>
+                
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor's Degree in Computer Science</span><br>GGITS  2020 - 2025</li>
+                        <li><span>Certification in Web Development</span><br>Completed an advanced web development course covering HTML, CSS, JavaScript, and React.</li>
+                        <li><span>Java and DSA Training</span><br>Completed a specialized training program in Java and Data Structures & Algorithms.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- --------------------------- services--------------------- -->
+   <div id="services">
+    <div class="container">
+        <h2 class="sub-tittle">My services</h2>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I design and build stunning, responsive websites that not only look amazing but also provide a seamless user experience. My focus is on creating designs that align with your brand and captivate your audience. From modern layouts to clean code, I ensure your website is both functional and visually striking. Let's bring your vision to life online!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>ui?ux</h2>
+                <p>I specialize in crafting intuitive and visually appealing interfaces that offer exceptional user experiences. By focusing on user needs and aesthetics, I create designs that are functional, engaging, and accessible. From wireframes to high-fidelity prototypes, I ensure every detail is aligned with your goals to enhance user satisfaction and retention.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Java DSA</h2>
+                <p>With expertise in Java and Data Structures, I simplify complex problems and create efficient, optimized solutions. Whether you're looking to learn the basics or need help designing robust algorithms, I make the process straightforward and result-driven. Let's collaborate to build systems that are fast, scalable, and reliable!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+          
+    </div>
+   </div>
+   <!-- ------------------------portfolio----------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                 <div class="work">
+                    <img src="img/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around the world.Download it from play store</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="img/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you the talented people around the world.Download it from play store</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="img/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping  App</h3>
+                        <p>The app connects you the talented people around the world.Download it from play store</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                 </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------------container---------------------------- -->
+     <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> aditiwari0307@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9109051533</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/Aditya Tiwari - resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Aditya. <i class="fa-solid fa-heart"></i></p>
+        </div>
+     </div>
+</body>
+<script >
+    let tablinks = document.querySelectorAll(".tab-links");
+    let tabcontents = document.querySelectorAll(".tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+</html>
